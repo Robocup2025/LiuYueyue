@@ -1,14 +1,11 @@
-from gaussian import compare_multiple_kernels
-from convolution import gaussian_filter_demo
-from padding import padding_demo 
+from sobel import sobel_filter
+from canny import manual_canny
+from harris import manual_harris
+from hist_equalization import visualize_hist_equalization
 
-if __name__=="__main__":
-    print("TASK2:")
-    compare_multiple_kernels(sizes=[3,5,7],sigmas=[0.5,1.0,2.0])
-    
-    print("TASK3:")
-    gaussian_filter_demo("photo.png")
-    
-    print("TASK4:")
-    padding_demo("photo.png")
-    
+if __name__=='__main__':
+   img='photo.png'
+   sobel_filter(img)
+   manual_canny(img)
+   manual_harris(img)
+   visualize_hist_equalization(img)

@@ -1,2 +1,13 @@
-# LiuYueyue
-刘悦月 2243221038 15952666688
+#homework2
+
+This package includes:
+-sobel.py
+-canny.py
+-harris.py
+-hist_equalization.py
+-main.py
+-photo.png
+-README.md
+
+Run:
+python3 main.py
